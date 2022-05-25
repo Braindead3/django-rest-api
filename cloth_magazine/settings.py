@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-9b=9(%75cf2_t4upk)*k(-t#1m#nefs712c(ntcj3dz#rc0oh&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'vlad-cloth-api.herokuapp.com']
 
 # Application definition
 
