@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9b=9(%75cf2_t4upk)*k(-t#1m#nefs712c(ntcj3dz#rc0oh&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'vlad-cloth-api.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'vlad-cloth-api.herokuapp.com']
 
 # Application definition
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
+    'user_api',
 ]
 
 MIDDLEWARE = [
@@ -75,13 +76,13 @@ WSGI_APPLICATION = 'cloth_magazine.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 

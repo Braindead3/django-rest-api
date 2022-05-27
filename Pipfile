@@ -9,6 +9,7 @@ djangorestframework = "*"
 djoser = "*"
 whitenoise = "*"
 gunicorn = "*"
+psycopg2 = "*"
 
 [dev-packages]
 

@@ -21,7 +21,6 @@ class ClothUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
 class CategoryCreateView(generics.ListCreateAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
-
 # class ClothViewSet(viewsets.ModelViewSet):
 #     serializer_class = ClothSerializer
 #     permission_classes = (IsOwnerOrAdminOrReadOnly,)
