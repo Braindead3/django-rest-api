@@ -140,6 +140,4 @@ REST_FRAMEWORK = {
     ),
 }
 
-CORS_ALLOWED_ORIGINS = [
-    'https://i7b6xe.csb.app/',
-]
+CORS_ALLOWED_ORIGINS : True
