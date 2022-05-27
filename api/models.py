@@ -15,7 +15,7 @@ class Cloth(models.Model):
     price = models.FloatField()
     # image = models.ImageField(default='default.jpg', upload_to='cloth_pics')
     category_id = models.ForeignKey('Category', on_delete=models.CASCADE)
-    user = models.ForeignKey(User, verbose_name='Пользователь', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, verbose_name='User', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name

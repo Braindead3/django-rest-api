@@ -24,7 +24,7 @@ from .models import Cloth, Category
 #         fields = ('id', 'name', 'brand', 'price', 'category_id')
 
 class ClothSerializer(serializers.ModelSerializer):
-    user = serializers.HiddenField(default=serializers.CurrentUserDefault())
+    # user = serializers.HiddenField(default=serializers.CurrentUserDefault())
 
     class Meta:
         model = Cloth
